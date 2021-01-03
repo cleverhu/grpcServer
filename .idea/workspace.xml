@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f19ff30-e0b8-43ec-b5d9-30c95a490ce9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/httpServer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keys/server.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keys/server_no_password.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pbfiles/google/api/annotations.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pbfiles/google/api/http.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pbfiles/google/api/httpbody.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pbfiles/google/rpc/code.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pbfiles/google/rpc/error_details.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pbfiles/google/rpc/status.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/Prod.pb.gw.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbfiles/Prod.proto" beforeDir="false" afterPath="$PROJECT_DIR$/pbfiles/Prod.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/Prod.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/Prod.pb.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1mYAXZeChoTe4HzSrJPyR73g3zn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="goland.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/cert" />
+      <recent name="$PROJECT_DIR$/keys" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pbfiles" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.httpServer">
+    <configuration name="httpServer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="grpcServer" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/httpServer.go" />
+      <package value="httpServer" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="grpcServer" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/server.go" />
+      <package value="grpcServer" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.server" />
+      <item itemvalue="Go Build.httpServer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.httpServer" />
+        <item itemvalue="Go Build.server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="260" key="#Go_Modules" timestamp="1609660919506">
+      <screen x="0" y="0" width="1440" height="848" />
+    </state>
+    <state x="446" y="260" key="#Go_Modules/0.0.1440.848@0.0.1440.848" timestamp="1609660919506" />
+    <state x="318" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609685706560">
+      <screen x="0" y="0" width="1440" height="849" />
+    </state>
+    <state x="318" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.841@0.0.1440.841" timestamp="1609667857699" />
+    <state x="318" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.849@0.0.1440.849" timestamp="1609685706560" />
+    <state x="689" y="263" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609660497124">
+      <screen x="0" y="0" width="1440" height="847" />
+    </state>
+    <state x="689" y="263" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.847@0.0.1440.847" timestamp="1609660497124" />
+    <state x="478" y="79" key="#go_build_grpcServer" timestamp="1609685689706">
+      <screen x="0" y="0" width="1440" height="849" />
+    </state>
+    <state x="478" y="79" key="#go_build_grpcServer/0.0.1440.849@0.0.1440.849" timestamp="1609685689706" />
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1609685749716">
+      <screen x="0" y="0" width="1440" height="849" />
+    </state>
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.0.1440.847@0.0.1440.847" timestamp="1609663772834" />
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.0.1440.848@0.0.1440.848" timestamp="1609661793845" />
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.0.1440.849@0.0.1440.849" timestamp="1609685749716" />
+    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1609685749715">
+      <screen x="0" y="0" width="1440" height="849" />
+    </state>
+    <state width="1398" height="218" key="GridCell.Tab.0.center/0.0.1440.847@0.0.1440.847" timestamp="1609663772833" />
+    <state width="1398" height="218" key="GridCell.Tab.0.center/0.0.1440.848@0.0.1440.848" timestamp="1609661793845" />
+    <state width="1398" height="207" key="GridCell.Tab.0.center/0.0.1440.849@0.0.1440.849" timestamp="1609685749715" />
+    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1609685749715">
+      <screen x="0" y="0" width="1440" height="849" />
+    </state>
+    <state width="1398" height="218" key="GridCell.Tab.0.left/0.0.1440.847@0.0.1440.847" timestamp="1609663772832" />
+    <state width="1398" height="218" key="GridCell.Tab.0.left/0.0.1440.848@0.0.1440.848" timestamp="1609661793845" />
+    <state width="1398" height="207" key="GridCell.Tab.0.left/0.0.1440.849@0.0.1440.849" timestamp="1609685749715" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1609685749716">
+      <screen x="0" y="0" width="1440" height="849" />
+    </state>
+    <state width="1398" height="218" key="GridCell.Tab.0.right/0.0.1440.847@0.0.1440.847" timestamp="1609663772833" />
+    <state width="1398" height="218" key="GridCell.Tab.0.right/0.0.1440.848@0.0.1440.848" timestamp="1609661793845" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right/0.0.1440.849@0.0.1440.849" timestamp="1609685749716" />
+    <state x="248" y="57" key="SettingsEditor" timestamp="1609664380613">
+      <screen x="0" y="0" width="1440" height="838" />
+    </state>
+    <state x="248" y="57" key="SettingsEditor/0.0.1440.838@0.0.1440.838" timestamp="1609664380613" />
+    <state x="248" y="58" key="SettingsEditor/0.0.1440.846@0.0.1440.846" timestamp="1609663392857" />
+  </component>
+</project>
