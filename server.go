@@ -3,30 +3,19 @@ package main
 import (
 	"fmt"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
 	"grpcServer/services"
 	"log"
-	"net/http"
+	"net"
 )
 
 func main() {
 	fmt.Println("start server")
-	creds, err := credentials.NewServerTLSFromFile("keys/server.crt", "keys/server_no_password.key")
+	rpcServer := grpc.NewServer()
+	services.RegisterUserServiceServer(rpcServer, new(services.UserService))
+
+	listen, err := net.Listen("tcp", ":8088")
 	if err != nil {
 		log.Fatal(err)
 	}
-
-
-	rpcServer := grpc.NewServer(grpc.Creds(creds))
-	services.RegisterProdServiceServer(rpcServer, new(services.ProdService))
-
-	mux := http.NewServeMux()
-	mux.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
-		fmt.Println(request.Proto)
-		fmt.Println(request)
-		rpcServer.ServeHTTP(writer, request)
-	})
-
-	httpServer := &http.Server{Addr: ":8081", Handler: mux}
-	log.Fatal(httpServer.ListenAndServeTLS("keys/server.crt", "keys/server_no_password.key"))
+	rpcServer.Serve(listen)
 }

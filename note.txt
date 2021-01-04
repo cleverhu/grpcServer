@@ -1,0 +1,5 @@
+生成service
+protoc --go_out=plugins=grpc:../services/ User.proto
+
+
+
