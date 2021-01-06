@@ -11,6 +11,7 @@ require (
 	github.com/jinzhu/gorm v1.9.16
 	github.com/onsi/ginkgo v1.14.2 // indirect
 	github.com/onsi/gomega v1.10.4 // indirect
+	google.golang.org/genproto v0.0.0-20201019141844-1ed22bb0c154
 	google.golang.org/grpc v1.34.0
 	google.golang.org/protobuf v1.25.0
 )

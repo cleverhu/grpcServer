@@ -1,24 +1,63 @@
 syntax = "proto3";
 package services;
+import "google/api/annotations.proto";
 message UserRequest{
-  int32 currentPage = 1;
-  int32 pageSize = 2;
+  int32 page = 1;
+  int32 size = 2;
   string search = 3;
-  string method = 4;
+}
+
+message UserInputRequest{
+  // @inject_tag: yaml:"username"
+  string username = 1;
+  // @inject_tag: yaml:"password"
+  string password = 2;
+  // @inject_tag: yaml:"tel"
+  string tel = 3;
+  // @inject_tag: yaml:"email"
+  string email = 4;
+  // @inject_tag: yaml:"id"
+  int32 id = 5;
+}
+
+message UsersInputRequest{
+  // @inject_tag: yaml:"users"
+  repeated UserInputRequest users = 1;
 }
 
 message UserResponse{
   // @inject_tag: gorm:"column:id"
-  int32 uid = 1;
+  int32 id = 1;
   // @inject_tag: gorm:"column:name"
   string username = 2;
+  // @inject_tag: gorm:"column:password"
+  string password = 3;
+  // @inject_tag: gorm:"column:telephone"
+  string tel = 4;
+  // @inject_tag: gorm:"column:email"
+  string email = 5;
+  // @inject_tag: gorm:"column:create_time"
+  string create_time = 6;
 }
 
 message UserResponseList{
   repeated UserResponse users = 1;
   int32 total = 2;
+  string version = 7;
+}
+
+message Result {
+  bool success = 1;
+  string version = 2;
 }
 
 service UserService{
-  rpc GetUserList(UserRequest) returns(UserResponseList);
+  rpc GetUserList(UserRequest) returns(UserResponseList){
+    option(google.api.http) = {
+      get:"/v1/{page}"
+    };
+  };
+  rpc AddUsers(UsersInputRequest) returns(Result);
 }
+
+

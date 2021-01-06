@@ -4,21 +4,16 @@ import (
 	"context"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
 	"grpcServer/services"
 	"log"
 	"net/http"
 )
 
 func main() {
-	cred, err := credentials.NewClientTLSFromFile("keys/server.crt", "localhost")
-	if err != nil {
-		log.Fatal(err)
-	}
 
 	gwMux := runtime.NewServeMux()
-	opt := []grpc.DialOption{grpc.WithTransportCredentials(cred)}
-	err = services.RegisterProdServiceHandlerFromEndpoint(context.Background(), gwMux, "localhost:8081", opt)
+	opt := []grpc.DialOption{grpc.WithInsecure()}
+	err := services.RegisterUserServiceHandlerFromEndpoint(context.Background(), gwMux, ":8088", opt)
 	if err != nil {
 		log.Fatal(err)
 	}
